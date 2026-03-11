@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Sri Medha Infra - Modern Contact | Material Suppliers & Construction</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Sri Medha Infra Contact Construction Material" name="keywords">
+    <meta content="Contact Sri Medha Infra - Leading Construction and Material Supply Company" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Libraries -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/slick/slick.css" rel="stylesheet">
+    <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Modern contact page refinements (colors untouched, only layout & cards) -->
+    <style>
+        /* modern contact card styling — preserves original color palette (#fdbe33 accent, etc) */
+        .contact-modern {
+            padding: 60px 0;
+            background: #fff;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+        .contact-card {
+            background: #f8f9fa;
+            border-radius: 20px;
+            padding: 35px 30px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid rgba(253, 190, 51, 0.1);
+        }
+        .contact-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 25px 40px rgba(0,0,0,0.08);
+            border-color: rgba(253, 190, 51, 0.3);
+        }
+        .contact-icon {
+            width: 70px;
+            height: 70px;
+            background: rgba(253, 190, 51, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+        }
+        .contact-icon i {
+            font-size: 32px;
+            color: #fdbe33 !important;  /* theme accent */
+        }
+        .contact-card h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .contact-card p {
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        .contact-card .small-text {
+            font-size: 15px;
+            color: #777;
+        }
+        .contact-form-modern {
+            background: #fff;
+            border-radius: 20px;
+            padding: 35px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.05);
+            border: 1px solid #eee;
+        }
+        .form-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 25px;
+            color: #222;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        .form-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #fdbe33;
+            border-radius: 2px;
+        }
+        .form-group-modern {
+            margin-bottom: 20px;
+        }
+        .form-group-modern input,
+        .form-group-modern textarea,
+        .form-group-modern select {
+            width: 100%;
+            padding: 15px 18px;
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            font-size: 15px;
+            transition: 0.3s;
+            background: #fafafa;
+        }
+        .form-group-modern input:focus,
+        .form-group-modern textarea:focus,
+        .form-group-modern select:focus {
+            border-color: #fdbe33;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(253, 190, 51, 0.15);
+            background: #fff;
+        }
+        .btn-modern {
+            background: #fdbe33;
+            color: #fff;
+            border: none;
+            padding: 14px 35px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            width: 100%;
+        }
+        .btn-modern:hover {
+            background: #e5a820;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(253, 190, 51, 0.3);
+        }
+        .map-down-container {
+            margin-top: 40px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+            border: 2px solid #fff;
+        }
+        .map-down-container iframe {
+            width: 100%;
+            height: 380px;
+            display: block;
+        }
+        /* Machinery table styling */
+        .machinery-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        .machinery-table th {
+            text-align: left;
+            background: #fdbe33;
+            color: #1a1a1a;
+            padding: 8px;
+            font-size: 14px;
+        }
+        .machinery-table td {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+        .machinery-table tr:last-child td {
+            border-bottom: none;
+        }
+        /* keep all original colors for header/footer */
+        .page-header, .footer, .top-bar, .nav-bar {
+            /* no changes, rely on external CSS */
+        }
+        /* override any potential icon color changes */
+        .contact-item i, .contact-icon i {
+            color: #fdbe33 !important;
+        }
+        /* alert styling for form feedback */
+        .form-alert {
+            padding: 12px 20px;
+            border-radius: 50px;
+            margin-bottom: 20px;
+            display: none;
+            text-align: center;
+        }
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .alert-danger {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Top Bar Start (unchanged) -->
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="logo">
+                            <a href="index.html">
+                                <h1>Sri Medha Infra</h1>
+                                <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-calendar"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Opening Hour</h3>
+                                        <p>Mon - Fri, 8:00 - 9:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-call"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Call Us</h3>
+                                        <p>96402 82828</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="top-bar-item">
+                                    <div class="top-bar-icon">
+                                        <i class="flaticon-send-mail"></i>
+                                    </div>
+                                    <div class="top-bar-text">
+                                        <h3>Email Us</h3>
+                                        <p>infrasrimedha@gmail.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <!-- Nav Bar Start (unchanged) -->
+        <div class="nav-bar">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                    <div class="navbar-brand-section">
+                        <img src="img/logo.png" alt="Sri Medha Infra Logo" class="navbar-logo">
+                        <a href="index.html" class="navbar-brand"><span>SRI MEDHA</span><span>INFRA</span></a>
+                    </div>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                        <div class="navbar-nav">
+                            <a href="index.html" class="nav-item nav-link">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="machinery.html" class="nav-item nav-link">Machinery</a>
+                            <a href="service.html" class="nav-item nav-link">Service</a>
+                            <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav Bar End -->
+        
+        <!-- Page Header Start (unchanged) -->
+        <div class="page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Contact Us</h2>
+                    </div>
+                    <div class="col-12">
+                        <a href="">Home</a>
+                        <a href="">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Header End -->
+
+        <!-- MODERN CONTACT SECTION (with Google Apps Script integration) -->
+        <div class="contact-modern wow fadeInUp">
+            <div class="container">
+                <div class="section-header text-center">
+                    <p>Get In Touch</p>
+                    <h2>For Any Query</h2>
+                </div>
+
+                <!-- modern two-column layout: contact cards + form -->
+                <div class="contact-grid">
+                    <!-- left side: contact info cards with machinery list -->
+                    <div>
+                        <!-- card 1: location -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="flaticon-address"></i>
+                            </div>
+                            <h3>Visit Our Office</h3>
+                            <p>82-67/3, 2nd Street,</p>
+                            <p>Rajamahendravaram - 533101</p>
+                            <p class="small-text">Andhra Pradesh, India</p>
+                        </div>
+                        <!-- card 2: phone & email -->
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="flaticon-call"></i>
+                            </div>
+                            <h3>Call / WhatsApp</h3>
+                            <p><strong>+91 96402 82828</strong></p>
+                            <p class="small-text">Available 8am - 8pm</p>
+                            <hr>
+                            <p><i class="fa fa-envelope"></i> infrasrimedha@gmail.com</p>
+                        </div>
+                        <!-- card 3: MACHINERY LIST (expanded) -->
+                        
+                    </div>
+
+                    <!-- right side: modern form card with Apps Script integration -->
+                    <div>
+                        <div class="contact-form-modern">
+                            <div class="form-title">Enquire about Machinery / Materials</div>
+                            <!-- Alert placeholders for feedback -->
+                            <div id="formAlert" class="form-alert"></div>
+                            
+                            <form id="contactFormModern" novalidate="novalidate">
+                                <div class="form-group-modern">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your full name *" required>
+                                </div>
+                                <div class="form-group-modern">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Email address *" required>
+                                </div>
+                                <div class="form-group-modern">
+                                    <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone number *" required>
+                                </div>
+                                <div class="form-group-modern">
+                                    <select class="form-control" id="material" name="material" required>
+                                        <option value="">Select machinery / material *</option>
+                                        <option value="MS Shuttering Material">MS Shuttering Material</option>
+                                        <option value="Tower Crane (tractor mounted)">Tower Crane (tractor mounted)</option>
+                                        <option value="Ajax Flori (4 Cum)">Ajax Flori (4 Cum)</option>
+                                        <option value="Ajax Flori (2 Cum)">Ajax Flori (2 Cum)</option>
+                                        <option value="Scaffolding Material">Scaffolding Material</option>
+                                        <option value="Staging Materials (MS Pipes & Clamps)">Staging Materials (MS Pipes & Clamps)</option>
+                                        <option value="Column Boxes Sets">Column Boxes Sets (Adjustable)</option>
+                                        <option value="Concrete Millers (Hopper) Diesel">Concrete Millers (Hopper) Diesel</option>
+                                        <option value="Concrete Millers (Without Hopper) Diesel">Concrete Millers (Without Hopper) Diesel</option>
+                                        <option value="Vibro Roller (10 Tons)">Vibro Roller (10 Tons)</option>
+                                        <option value="Roller (5 Tons)">Roller (5 Tons)</option>
+                                        <option value="Double Drum Walk Behind Roller">Double Drum Walk Behind Roller</option>
+                                        <option value="Plate Vibrators">Plate Vibrators</option>
+                                        <option value="Electrical Pin Vibrators">Electrical Pin Vibrators</option>
+                                        <option value="Diesel Pin Vibrators">Diesel Pin Vibrators</option>
+                                        <option value="Chipping & Drilling Machine">Chipping & Drilling Machine</option>
+                                        <option value="Total Station (Leica)">Total Station (Leica)</option>
+                                        <option value="Auto Level Instruments">Auto Level Instruments</option>
+                                        <option value="JCB">JCB</option>
+                                        <option value="Tractor">Tractor</option>
+                                        <option value="Bolero (Material Shifting)">Bolero (Material Shifting)</option>
+                                        <option value="Other">Other (specify in message)</option>
+                                    </select>
+                                </div>
+                                <div class="form-group-modern">
+                                    <input type="text" class="form-control" id="quantity" name="quantity" placeholder="Quantity / Rental duration" required>
+                                </div>
+                                <div class="form-group-modern">
+                                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Project location / Specific requirements"></textarea>
+                                </div>
+                                <div>
+                                    <button class="btn-modern" type="submit" id="sendMessageButton">Send Enquiry <i class="fa fa-paper-plane ml-2"></i></button>
+                                </div>
+                            </form>
+                            <p class="small-text text-center mt-3">We'll respond within 2 hours</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MAP AT THE BOTTOM (as requested) -->
+                <div class="map-down-container wow fadeInUp" data-wow-delay="0.2s">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3814.4325449391267!2d81.77448831498363!3d16.98314351730811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37a3f8a3a3e3e3%3A0x7e8e8e8e8e8e8e8e!2sRajamahendravaram%2C%20Andhra%20Pradesh%20533101!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Modern Contact End -->
+
+        <!-- Footer Start (unchanged) -->
+        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-contact">
+                            <div class="footer-logo-section">
+                                <img src="img/logo.png" alt="Sri Medha Infra Logo" class="footer-logo">
+                                <div class="footer-logo-text">
+                                    <span class="part1">SRI MEDHA</span>
+                                    <span class="part2">INFRA</span>
+                                </div>
+                            </div>
+                            <p><i class="fa fa-map-marker-alt"></i>82-67/3, 2nd Street, Rajamahendravaram - 533101</p>
+                            <p><i class="fa fa-phone-alt"></i>96402 82828</p>
+                            <p><i class="fa fa-envelope"></i>infrasrimedha@gmail.com</p>
+                            <div class="footer-social">
+                                <a href=""><i class="fab fa-twitter"></i></a>
+                                <a href=""><i class="fab fa-facebook-f"></i></a>
+                                <a href=""><i class="fab fa-youtube"></i></a>
+                                <a href=""><i class="fab fa-instagram"></i></a>
+                                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-link">
+                            <h2>Services Areas</h2>
+                            <a href="">Construction Services</a>
+                            <a href="">Material Supply</a>
+                            <a href="">Equipment Rental</a>
+                            <a href="">Project Management</a>
+                            <a href="">Machinery Support</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="footer-link">
+                            <h2>Useful Pages</h2>
+                            <a href="">About Us</a>
+                            <a href="">Contact Us</a>
+                            <a href="">Our Team</a>
+                            <a href="">Projects</a>
+                            <a href="">Testimonial</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="newsletter">
+                            <h2>Newsletter</h2>
+                            <p>
+                                Get latest updates on new machinery arrivals, construction tips and project highlights delivered to your inbox.
+                            </p>
+                            <div class="form">
+                                <input class="form-control" placeholder="Email here">
+                                <button class="btn">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-menu">
+                <div class="f-menu">
+                    <a href="">Terms of use</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Cookies</a>
+                    <a href="">Help</a>
+                    <a href="">FQAs</a>
+                </div>
+            </div>
+            <div class="container copyright">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>&copy; <a href="#">Sri Medha Infra</a>, All Right Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    
+    <!-- Contact Form AJAX Submission to Google Apps Script -->
+    <script>
+        $(document).ready(function() {
+            $('#contactFormModern').on('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+                
+                // Show sending state
+                const $btn = $('#sendMessageButton');
+                const originalText = $btn.html();
+                $btn.html('<i class="fa fa-spinner fa-spin"></i> Sending...').prop('disabled', true);
+                
+                // Collect form data
+                var formData = {
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    phone: $('#phone').val(),
+                    material: $('#material').val(),
+                    quantity: $('#quantity').val(),
+                    message: $('#message').val()
+                };
+                
+                // GOOGLE APPS SCRIPT URL - REPLACE WITH YOUR DEPLOYMENT URL
+                var scriptUrl = 'https://script.google.com/macros/s/AKfycbxqoIjKdqxDCCQGQph62JRj4C0ZT-1VKDlnnVxVKnWVQx06S8TOUb44vkywLu7g4eNb/exec'; // <-- UPDATE THIS!
+                
+                // Submit using AJAX
+                $.ajax({
+                    url: scriptUrl,
+                    method: 'POST',
+                    data: formData,
+                    dataType: 'json',
+                    success: function(response) {
+                        if (response.status === 'success') {
+                            showAlert('success', '✅ ' + response.message + ' Reference: ' + response.enquiryRef);
+                            $('#contactFormModern')[0].reset(); // Clear form
+                        } else {
+                            showAlert('danger', '❌ ' + response.message);
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        console.error(error);
+                        showAlert('danger', '❌ Network error. Please try again or contact us directly.');
+                    },
+                    complete: function() {
+                        $btn.html(originalText).prop('disabled', false);
+                    }
+                });
+            });
+            
+            function showAlert(type, message) {
+                var alertBox = $('#formAlert');
+                alertBox.removeClass('alert-success alert-danger').addClass('alert-' + type).html(message).fadeIn();
+                $('html, body').animate({ scrollTop: alertBox.offset().top - 100 }, 500);
+                setTimeout(function() {
+                    alertBox.fadeOut();
+                }, 8000);
+            }
+        });
+    </script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

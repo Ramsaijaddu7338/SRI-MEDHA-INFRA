@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Sri Medha Infra - Our Machinery | Equipment & Assets</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Sri Medha Infra Machinery Equipment Assets" name="keywords">
+        <meta content="Complete list of machinery and equipment available at Sri Medha Infra" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+
+        <style>
+            .machinery-header {
+                background: linear-gradient(135deg, #030f27 0%, #1a1f2e 100%);
+                padding: 60px 0;
+                text-align: center;
+                color: white;
+                margin-bottom: 50px;
+            }
+
+            .machinery-header h1 {
+                font-size: 48px;
+                font-weight: 800;
+                margin-bottom: 15px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+                color: #fdbe33;
+            }
+
+            .machinery-header p {
+                font-size: 18px;
+                margin: 0;
+                opacity: 0.95;
+            }
+
+            .machinery-table {
+                box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+                border-radius: 12px;
+                overflow: hidden;
+                border: 1px solid rgba(253, 190, 51, 0.1);
+            }
+
+            .machinery-table table {
+                margin-bottom: 0;
+            }
+
+            .machinery-table thead {
+                background: linear-gradient(135deg, #030f27 0%, #1a1f2e 100%);
+                color: white;
+            }
+
+            .machinery-table thead th {
+                border: none;
+                padding: 22px 18px;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                font-size: 13px;
+                color: #fdbe33;
+                border-bottom: 3px solid #fdbe33;
+            }
+
+            .machinery-table tbody tr {
+                border-bottom: 1px solid #e8e8e8;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                background-color: #ffffff;
+            }
+
+            .machinery-table tbody tr:nth-child(even) {
+                background-color: #f9f9f9;
+            }
+
+            .machinery-table tbody tr:hover {
+                background: linear-gradient(90deg, #fdbe33 0%, #f5a600 100%);
+                background-color: #fdbe33;
+                color: #030f27;
+                box-shadow: inset 0 0 15px rgba(253, 190, 51, 0.3), 0 8px 20px rgba(253, 190, 51, 0.2);
+                transform: scaleX(1.02);
+            }
+
+            .machinery-table tbody tr:hover td {
+                color: #030f27 !important;
+            }
+
+            .machinery-table tbody tr:last-child {
+                border-bottom: 2px solid #fdbe33;
+            }
+
+            .machinery-table tbody td {
+                padding: 20px 18px;
+                vertical-align: middle;
+                font-size: 15px;
+                font-weight: 500;
+            }
+
+            .machinery-table tbody td:first-child {
+                color: #030f27;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+            }
+
+            .machinery-table tbody td:nth-child(2),
+            .machinery-table tbody td:nth-child(3) {
+                text-align: center;
+                color: #fdbe33;
+                font-weight: 800;
+                font-size: 16px;
+            }
+
+            .machinery-stats {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 25px;
+                margin-bottom: 60px;
+            }
+
+            .stat-card {
+                background: linear-gradient(135deg, #030f27 0%, #1a1f2e 100%);
+                color: white;
+                padding: 40px;
+                border-radius: 12px;
+                text-align: center;
+                box-shadow: 0 10px 35px rgba(253, 190, 51, 0.15);
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                border-top: 4px solid #fdbe33;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .stat-card::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, transparent, rgba(253, 190, 51, 0.2), transparent);
+                transition: left 0.5s ease;
+            }
+
+            .stat-card:hover::before {
+                left: 100%;
+            }
+
+            .stat-card:hover {
+                transform: translateY(-15px);
+                box-shadow: 0 20px 50px rgba(253, 190, 51, 0.3);
+                border-top: 4px solid #ffcc00;
+            }
+
+            .stat-card i {
+                font-size: 50px;
+                margin-bottom: 20px;
+                display: block;
+                color: #fdbe33;
+                transition: all 0.3s ease;
+            }
+
+            .stat-card:hover i {
+                color: #ffcc00;
+                transform: scale(1.2) rotate(10deg);
+            }
+
+            .stat-card h3 {
+                font-size: 42px;
+                font-weight: 900;
+                margin-bottom: 8px;
+                color: #fdbe33;
+                letter-spacing: 2px;
+            }
+
+            .stat-card p {
+                font-size: 15px;
+                margin: 0;
+                opacity: 0.95;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+
+            .machinery-intro {
+                background: #f9f9f9;
+                padding: 30px;
+                border-left: 4px solid #fdbe33;
+                margin-bottom: 40px;
+                border-radius: 4px;
+            }
+
+            .machinery-intro h3 {
+                color: #030f27;
+                font-weight: 700;
+                margin-bottom: 15px;
+                font-size: 22px;
+            }
+
+            .machinery-intro p {
+                color: #666666;
+                line-height: 1.8;
+                margin-bottom: 0;
+            }
+
+            @media (max-width: 768px) {
+                .machinery-table thead th {
+                    padding: 15px 10px;
+                    font-size: 12px;
+                }
+
+                .machinery-table tbody td {
+                    padding: 12px 10px;
+                    font-size: 13px;
+                }
+
+                .machinery-header h1 {
+                    font-size: 36px;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Top Bar Start -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <h1>Sri Medha Infra</h1>
+                                    <!-- <img src="img/logo.jpg" alt="Logo"> -->
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-calendar"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Opening Hour</h3>
+                                            <p>Mon - Fri, 8:00 - 9:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Call Us</h3>
+                                            <p>96402 82828</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-send-mail"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>Email Us</h3>
+                                            <p>infrasrimedha@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <div class="navbar-brand-section">
+                            <img src="img/logo.png" alt="Sri Medha Infra Logo" class="navbar-logo">
+                            <a href="index.html" class="navbar-brand"><span>SRI MEDHA</span><span>INFRA</span></a>
+                        </div>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                            <div class="navbar-nav">
+                                <a href="index.html" class="nav-item nav-link">Home</a>
+                                <a href="about.html" class="nav-item nav-link">About</a>
+                                <a href="machinery.html" class="nav-item nav-link active">Machinery</a>
+                                <a href="service.html" class="nav-item nav-link">Service</a>
+                                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+
+            <!-- Machinery Header Start -->
+            <div class="machinery-header">
+                <div class="container">
+                    <h1>Our Machinery & Equipment</h1>
+                    <p>Complete Fleet of Modern Construction Equipment & Materials</p>
+                </div>
+            </div>
+            <!-- Machinery Header End -->
+
+            <!-- Machinery Content Start -->
+            <div class="container">
+                <!-- Intro Section -->
+                <div class="machinery-intro wow fadeInUp" data-wow-delay="0.1s">
+                    <h3><i class="fas fa-tools" style="margin-right: 10px; color: #0085C7;"></i>Description of Machinery in Hand</h3>
+                    <p>Sri Medha Infra maintains a comprehensive fleet of modern machinery and equipment to handle projects of any scale. Our machinery inventory includes heavy construction equipment, material supplies, and precision instruments, ensuring we can deliver quality services efficiently and on time.</p>
+                </div>
+
+                <!-- Statistics Cards -->
+                <div class="machinery-stats wow fadeInUp" data-wow-delay="0.2s">
+                    <div class="stat-card">
+                        <i class="fas fa-truck-loading"></i>
+                        <h3>21</h3>
+                        <p>Equipment Types</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-boxes"></i>
+                        <h3>185+</h3>
+                        <p>Total Units</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-cogs"></i>
+                        <h3>100%</h3>
+                        <p>Operational</p>
+                    </div>
+                </div>
+
+                <!-- Machinery Table -->
+                <div class="machinery-table wow fadeInUp" data-wow-delay="0.3s">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Machinery</th>
+                                <th style="width: 15%;">Unit</th>
+                                <th style="width: 15%;">Quantity</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>MS Shuttering Material</td>
+                                <td>Sft</td>
+                                <td>10,000</td>
+                            </tr>
+                            <tr>
+                                <td>Tower Crane (tractor mounted) 28.5 mtrs height</td>
+                                <td>No's</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Ajax Flori (4 Cum)</td>
+                                <td>No's</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Ajax Flori (2 Cum)</td>
+                                <td>No's</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Scaffolding Material</td>
+                                <td>Tons</td>
+                                <td>120</td>
+                            </tr>
+                            <tr>
+                                <td>Staging Materials (MS Pipes & Clamps)</td>
+                                <td>Sft</td>
+                                <td>65,000</td>
+                            </tr>
+                            <tr>
+                                <td>Column Boxes Sets (Adjustable) 9 feet height</td>
+                                <td>No's</td>
+                                <td>90</td>
+                            </tr>
+                            <tr>
+                                <td>Concrete Millers (Hopper) Diesel</td>
+                                <td>No's</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>Concrete Millers (Without Hopper) Diesel</td>
+                                <td>No's</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Vibro Roller (10 Tons)</td>
+                                <td>No's</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Roller (5 Tons)</td>
+                                <td>No's</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Double Drum Walk Behind Roller</td>
+                                <td>No's</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Plate Vibrators</td>
+                                <td>No's</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Electrical Pin Vibrators</td>
+                                <td>No's</td>
+                                <td>10</td>
+                            </tr>
+                            <tr>
+                                <td>Diesel Pin Vibrators</td>
+                                <td>No's</td>
+                                <td>23</td>
+                            </tr>
+                            <tr>
+                                <td>Chipping & Drilling Machine</td>
+                                <td>No's</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Total Station (Leica)</td>
+                                <td>No's</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Auto Level Instruments</td>
+                                <td>No's</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>JCB</td>
+                                <td>No's</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>Tractor</td>
+                                <td>No's</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Bolero (For Material Shifting)</td>
+                                <td>No's</td>
+                                <td>2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Why Choose Us -->
+                <div class="row" style="margin-top: 60px; margin-bottom: 40px;">
+                    <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.1s">
+                        <h3 style="color: #030f27; font-weight: 700; margin-bottom: 20px;">Why Our Machinery?</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 15px; font-size: 16px;"><i class="fas fa-check" style="color: #0085C7; margin-right: 10px; font-weight: 700;"></i>Well-maintained and regularly serviced equipment</li>
+                            <li style="margin-bottom: 15px; font-size: 16px;"><i class="fas fa-check" style="color: #0085C7; margin-right: 10px; font-weight: 700;"></i>Modern and latest technology machinery</li>
+                            <li style="margin-bottom: 15px; font-size: 16px;"><i class="fas fa-check" style="color: #0085C7; margin-right: 10px; font-weight: 700;"></i>Skilled operators and technical support</li>
+                            <li style="margin-bottom: 15px; font-size: 16px;"><i class="fas fa-check" style="color: #0085C7; margin-right: 10px; font-weight: 700;"></i>On-time delivery and reliable service</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 wow fadeInRight" data-wow-delay="0.1s">
+                        <h3 style="color: #030f27; font-weight: 700; margin-bottom: 20px;">Comprehensive Support</h3>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 15px; font-size: 16px;"><i class="fas fa-check" style="color: #0085C7; margin-right: 10px; font-weight: 700;"></i>24/7 technical assistance available</li>
+                            <li style="margin-bottom: 15px; font-size: 16px;"><i class="fas fa-check" style="color: #0085C7; margin-right: 10px; font-weight: 700;"></i>Preventive maintenance programs</li>
+                            <li style="margin-bottom: 15px; font-size: 16px;"><i class="fas fa-check" style="color: #0085C7; margin-right: 10px; font-weight: 700;"></i>Quick spare parts availability</li>
+                            <li style="margin-bottom: 15px; font-size: 16px;"><i class="fas fa-check" style="color: #0085C7; margin-right: 10px; font-weight: 700;"></i>Cost-effective solutions for all projects</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Machinery Content End -->
+
+            <!-- Footer Start -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <div class="footer-logo-section">
+                                <img src="img/logo.png" alt="Sri Medha Infra Logo" class="footer-logo">
+                                <div class="footer-logo-text">
+                                    <span class="part1">SRI MEDHA</span>
+                                    <span class="part2">INFRA</span>
+                                </div>
+                            </div>
+                                <p><i class="fa fa-map-marker-alt"></i>82-67/3, 2nd Street, Rajamahendravaram - 533101</p>
+                                <p><i class="fa fa-phone-alt"></i>96402 82828</p>
+                                <p><i class="fa fa-envelope"></i>infrasrimedha@gmail.com</p>
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Services Areas</h2>
+                                <a href="">Building Construction</a>
+                                <a href="">Material Supply</a>
+                                <a href="">Equipment Rental</a>
+                                <a href="">Project Management</a>
+                                <a href="">Consulting</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>Useful Pages</h2>
+                                <a href="">About Us</a>
+                                <a href="">Contact Us</a>
+                                <a href="">Our Team</a>
+                                <a href="">Machinery</a>
+                                <a href="">Testimonial</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>Newsletter</h2>
+                                <p>
+                                    Subscribe to get updates about our latest machinery and services
+                                </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="Email here">
+                                    <button class="btn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">Terms of use</a>
+                        <a href="">Privacy policy</a>
+                        <a href="">Cookies</a>
+                        <a href="">Help</a>
+                        <a href="">FQAs</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">Sri Medha Infra</a>, All Right Reserved.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+    </body>
+</html>
